@@ -27,6 +27,26 @@ def solution(survey, choices):
         elif(choices[idx] == 7):
             score[b] += 3
 
+    if( score["T"] > score["R"] ):
+        answer += "T"
+    else:
+        answer += "R"
+    
+    if( score["F"] > score["C"] ):
+        answer += "F"
+    else:
+        answer += "C"
+    
+    if( score["M"] > score["J"] ):
+        answer += "M"
+    else:
+        answer += "J"
+    
+    if( score["N"] > score["A"] ):
+        answer += "N"
+    else:
+        answer += "A"
+
     return answer
 
 print(solution(["AN", "CF", "MJ", "RT", "NA"],	[5, 3, 2, 7, 5]))

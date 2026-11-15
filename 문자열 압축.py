@@ -16,14 +16,11 @@ def solution(s):
 
                 prev = cur
                 cnt = 1
+
         if cnt>=2:
             string+= str(cnt)
         string+=prev
-        
+
         answer = min(answer, len(string))
 
-    
     return answer
-
-
-print(solution("abcabcabcabcdededededede"))
